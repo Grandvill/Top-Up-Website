@@ -1,0 +1,25 @@
+#services img {
+  height: 150px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+}
+
+#topup img {
+  height: 150px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+}
+
+input [type='radio'] {
+  display: contents;
+}
+
+label {
+  position: relative;
+  display: flex;
+  align-items: center;
+}

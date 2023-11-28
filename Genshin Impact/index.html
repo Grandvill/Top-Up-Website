@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+    <title>Genshin Impact | Grandviil Store</title>
+  </head>
+  <!-- navbar -->
+  <body>
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark sticky-top py-3">
+      <!-- menggunakan container agar konten nya ke tengah-->
+      <div class="container" id="home">
+        <a href="/index.html" class="navbar-brand">Grandvill Gaming Store</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenus">
+          <span class="navbar-toggler-icon"></span>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </button>
+        <div class="collapse navbar-collapse" id="navmenus">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="/index.html#services" class="nav-link">Games </a></li>
+            <li class="nav-item"><a href="/index.html#promo" class="nav-link">promo</a></li>
+            <li class="nav-item"><a href="/index.html#contact" class="nav-link">Contact Us</a></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- header -->
+    <section class="container header bg-light text-dark text-center pt-2 pb-2 pb-lg-2 mt-1">
+      <div class="container">
+        <div class="d-flex align-items-center">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../image/genshin3.jpg" class=" img-fluid w-100" alt="genshin" width="50" height="200">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>  
+      
+      <!-- Card -->
+      <div class="container header bg-light text-dark text-center mt-3">
+      <div class=" max-h-full transition-all"></div>
+      <article class="shadow-form relative flex-1 bg-backgroundSecondary px-4 pb-8 sm:rounded-lg lg:block" >
+        <div class="relative-flex align-items-center">
+          <div class="col-md pt-3">
+            <img src="../image/genshin.jpeg" alt="Genshin Impact" class="img-fluid" width="20%" height="150px">
+          </div>
+          <div>
+            <h3 class="text-lg font-extrabold leading-6">Genshin Impact</h3>
+            <p class="text-xs font-semibold leading-6">Hoyoverse</p>
+          </div>
+        </div>
+        <div class="max-h-32 transition-all">
+          <article class="h-32 overflow-hidden prose prose-headings:m-0 prose-h1:text-base prose-h2:text-base prose-h3:text-sm prose-h4:text-sm prose-p:m-0 prose-p:text-xs prose-li:m-0 prose-li:text-xs">
+            <p class="ql-align-center">
+              <strong style="color: rgb(192, 57, 43);">Proses Manual 1-5 Menit</strong></p>
+              <p>Top Up Genshin Impact termurah dan terpercaya</p>
+              <p>Caranya mudah loh :</p>
+              <p>1. Cukup masukan 
+                <strong>ID</strong> 
+                dan 
+                <strong>PILIH SERVER</strong>
+              </p>
+              <p>2. Pilih 
+                <strong>Nominal</strong> 
+                yang ingin kamu beli
+              </p>
+              <p>3. Pilih metode pembayaran</p>
+              <p>4. Isi nomor 
+                <strong>whatsapp</strong> 
+                kamu dengan benar karna kami akan memberikan 
+                <strong>notifikasi</strong> 
+                jika pesanan sudah di proses.
+              </p>
+                <p>5. Selamat ! GC akan bertambah langsung ke akunmu setelah <strong>pembayaran berhasil</strong> 
+                  / mendapatkan notifikasi whatsapp dari kami.
+                </p>
+                <p class="ql-align-center"><strong style="color: rgb(192, 57, 43);">JAM AKTIF LAYANAN INI</strong></p><p class="ql-align-center"><strong style="color: rgb(192, 57, 43);">10.00 - 19.00 WIB</strong>
+                </p>
+              </article>
+          </div>
+        </article>
+    </div>
+
+
+  <!-- ID & SERVER -->
+  <div class="container header bg-light text-dark mt-3 mb-3 p-3">
+    <h4>Masukkan ID dan Server</h4>
+    <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">UID</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Masukkan ID">
+        </div>
+        <div class="col-md-6">
+          <label for="inputState" class="form-label">Server</label>
+          <select id="inputState" class="form-select">
+            <option selected>Pilih Server</option>
+            <option>Asia</option>
+            <option>America</option>
+            <option>Europe</option>
+            <option>TW, HK, MO</option>
+          </select>
+        </div>
+    </form>
+  </div>        
+
+  <div class="container header bg-light text-dark mt-3 mb-3 p-3">     
+          <h4>Pilih Nominal</h4>
+          <div class="card-body">
+            <div id="tempatNominal">
+              <div class="row row-cols-2">
+                <div class="col-lg-4 mt-3">
+                  <div class="list-group shadow h-100">
+                    <input type="radio" name="inlineRadioOptions" id="nominal-55" value="55" data-type="diamond">
+                    <label for="nominal-55" class="list-group-item h-100">
+                      <div class="row">
+                      <div class="col">
+                      <div class="row">
+                        <div class="col name-prod">Blessing Off The Welking Moon</div>
+                      </div>
+                        <div class="row">
+                          <div class="col nominal-price">Rp 55.700</div>
+                        </div>
+                      </div>
+                 <div class="col-lg-3 col-1 m-auto">
+            <img src="https://argamingshop.com/assets/img/1652357558ezgif.com-gif-maker%20(3).png" width="32px" style=" top: 20%;right: 5%;position: absolute;" alt="">
+            </div>
+            </div>
+            </label>
+            </div>
+            </div>
+            <div class="col-lg-4 mt-3">
+              <div class="list-group shadow h-100">
+                <input type="radio" name="inlineRadioOptions" id="nominal-1401" value="1401" data-type="diamond">
+                <label for="nominal-1401" class="list-group-item h-100">
+              <div class="row">
+                <div class="col">
+                  <div class="row">
+                    <div class="col name-prod">Blessing Welkin x 2</div>
+                  </div>
+              <div class="row">
+                <div class="col nominal-price">Rp 111.400</div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-1 m-auto">
+            <img src="https://argamingshop.com/assets/img/1652357558ezgif.com-gif-maker%20(3).png" width="32px" style=" top: 20%;right: 5%;position: absolute;" alt="">
+            </div>
+            </div>
+            </label>
+            </div>
+            </div>
+            <div class="col-lg-4 mt-3">
+            <div class="list-group shadow h-100">
+            <input type="radio" name="inlineRadioOptions" id="nominal-1402" value="1402" data-type="diamond">
+            <label for="nominal-1402" class="list-group-item h-100">
+            <div class="row">
+            <div class="col">
+            <div class="row">
+            <div class="col name-prod">Blessing Welkin x 3</div>
+            </div>
+            <div class="row">
+            <div class="col nominal-price">Rp 167.100</div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-1 m-auto">
+            <img src="https://argamingshop.com/assets/img/1652357558ezgif.com-gif-maker%20(3).png" width="32px" style=" top: 20%;right: 5%;position: absolute;" alt="">
+            </div>
+            </div>
+            </label>
+            </div>
+            </div>
+            <div class="col-lg-4 mt-3">
+            <div class="list-group shadow h-100">
+            <input type="radio" name="inlineRadioOptions" id="nominal-1403" value="1403" data-type="diamond">
+            <label for="nominal-1403" class="list-group-item h-100">
+            <div class="row">
+            <div class="col">
+            <div class="row">
+            <div class="col name-prod">Blessing Welkin x 4</div>
+            </div>
+            <div class="row">
+            <div class="col nominal-price">Rp 222.800</div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-1 m-auto">
+            <img src="https://argamingshop.com/assets/img/1652357558ezgif.com-gif-maker%20(3).png" width="32px" style=" top: 20%;right: 5%;position: absolute;" alt="">
+            </div>
+            </div>
+            </label>
+            </div>
+            </div>
+            <div class="col-lg-4 mt-3">
+            <div class="list-group shadow h-100">
+            <input type="radio" name="inlineRadioOptions" id="nominal-1404" value="1404" data-type="diamond">
+            <label for="nominal-1404" class="list-group-item h-100">
+            <div class="row">
+            <div class="col">
+            <div class="row">
+            <div class="col name-prod">Blessing Welkin x 5</div>
+            </div>
+            <div class="row">
+            <div class="col nominal-price">Rp 278.500</div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-1 m-auto">
+            <img src="https://argamingshop.com/assets/img/1652357558ezgif.com-gif-maker%20(3).png" width="32px" style=" top: 20%;right: 5%;position: absolute;" alt="">
+            </div>
+            </div>
+            </label>
+            </div>
+            </div>
+            <div class="col-lg-4 mt-3">
+            <div class="list-group shadow h-100">
+            <input type="radio" name="inlineRadioOptions" id="nominal-49" value="49" data-type="diamond">
+            <label for="nominal-49" class="list-group-item h-100">
+            <div class="row">
+            <div class="col">
+            <div class="row">
+            <div class="col name-prod">60 Genesis</div>
+            </div>
+            <div class="row">
+            <div class="col nominal-price">Rp 11.000</div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-1 m-auto">
+            <img src="https://argamingshop.com/assets/img/1652357352genshin.png" width="32px" style=" top: 20%;right: 5%;position: absolute;" alt="">
+            </div>
+            </div>
+            </label>
+            </div>
+            </div>
+            <div class="col-lg-4 mt-3">
+            <div class="list-group shadow h-100">
+            <input type="radio" name="inlineRadioOptions" id="nominal-50" value="50" data-type="diamond">
+            <label for="nominal-50" class="list-group-item h-100">
+            <div class="row">
+            <div class="col">
+            <div class="row">
+            <div class="col name-prod">300+30 Genesis</div>
+            </div>
+            <div class="row">
+            <div class="col nominal-price">Rp 55.700</div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-1 m-auto">
+            <img src="https://argamingshop.com/assets/img/1652357352genshin.png" width="32px" style=" top: 20%;right: 5%;position: absolute;" alt="">
+            </div>
+            </div>
+            </label>
+            </div>
+            </div>
+            <div class="col-lg-4 mt-3">
+            <div class="list-group shadow h-100">
+            <input type="radio" name="inlineRadioOptions" id="nominal-51" value="51" data-type="diamond">
+            <label for="nominal-51" class="list-group-item h-100">
+            <div class="row">
+            <div class="col">
+            <div class="row">
+            <div class="col name-prod">980+110 Genesis</div>
+            </div>
+            <div class="row">
+            <div class="col nominal-price">Rp 167.100</div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-1 m-auto">
+            <img src="https://argamingshop.com/assets/img/1652357352genshin.png" width="32px" style=" top: 20%;right: 5%;position: absolute;" alt="">
+            </div>
+            </div>
+            </label>
+            </div>
+            </div>
+            <div class="col-lg-4 mt-3">
+            <div class="list-group shadow h-100">
+            <input type="radio" name="inlineRadioOptions" id="nominal-52" value="52" data-type="diamond">
+            <label for="nominal-52" class="list-group-item h-100">
+            <div class="row">
+            <div class="col">
+            <div class="row">
+            <div class="col name-prod">1980+260 Genesis</div>
+            </div>
+            <div class="row">
+            <div class="col nominal-price">Rp 363.700</div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-1 m-auto">
+            <img src="https://argamingshop.com/assets/img/1652357352genshin.png" width="32px" style=" top: 20%;right: 5%;position: absolute;" alt="">
+            </div>
+            </div>
+            </label>
+            </div>
+            </div>
+            <div class="col-lg-4 mt-3">
+            <div class="list-group shadow h-100">
+            <input type="radio" name="inlineRadioOptions" id="nominal-53" value="53" data-type="diamond">
+            <label for="nominal-53" class="list-group-item h-100">
+            <div class="row">
+            <div class="col">
+            <div class="row">
+            <div class="col name-prod">3280+600 Genesis</div>
+            </div>
+            <div class="row">
+            <div class="col nominal-price">Rp 559.800</div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-1 m-auto">
+            <img src="https://argamingshop.com/assets/img/1652357352genshin.png" width="32px" style=" top: 20%;right: 5%;position: absolute;" alt="">
+            </div>
+            </div>
+            </label>
+            </div>
+            </div>
+            <div class="col-lg-4 mt-3">
+            <div class="list-group shadow h-100">
+            <input type="radio" name="inlineRadioOptions" id="nominal-54" value="54" data-type="diamond">
+            <label for="nominal-54" class="list-group-item h-100">
+            <div class="row">
+            <div class="col">
+            <div class="row">
+            <div class="col name-prod">6480+1600 Genesis</div>
+            </div>
+            <div class="row">
+            <div class="col nominal-price">Rp 1.119.000</div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-1 m-auto">
+            <img src="https://argamingshop.com/assets/img/1652357352genshin.png" width="32px" style=" top: 20%;right: 5%;position: absolute;" alt="">
+            </div>
+            </div>
+            </label>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+          </div>
+<!-- Detail transaksi -->
+    <div class="container header bg-light text-dark p-3 mt-3 mb-3">
+      <h4>Masukkan Detail Anda</h4>
+      <p>Silahkan masukkan email Anda untuk menerima bukti pembelian Anda.</p>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Alamat Email</label>
+        <p>Bukti pembelianmu akan kami kirimkan ke Email. Pastikan Email yang di input benar.</p>
+      </div>
+    </div>
+
+  <!-- Pembayaran -->
+  <div class="container header bg-light text-dark mt-1 mb-3">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&display=swap");
+
+    *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      height: 100%;
+      min-height: 100vh;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .main {
+      max-width: 75rem;
+      padding: 3em 1.5em;
+    }
+
+    .main__heading {
+      font-weight: 600;
+      font-size: 2.25em;
+      margin-bottom: 0.75em;
+      text-align: center;
+      color: black;
+    }
+
+    .cards {
+      position: relative;
+    }
+
+    .cards__inner {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.5em;
+    }
+
+    .card {
+      --flow-space: 0.5em;
+      --hsl: var(--hue), var(--saturation), var(--lightness);
+      flex: 1 1 14rem;
+      padding: 1.5em 2em;
+      display: grid;
+      grid-template-rows: auto auto auto 1fr;
+      align-items: start;
+      gap: 1.25em;
+      color: black;
+      background-color: white;
+      border: 1px solid black;
+      border-radius: 15px;
+    }
+
+    .card:nth-child(1) {
+      --hue: 165;
+      --saturation: 82.26%;
+      --lightness: 51.37%;
+    }
+
+    .card:nth-child(2) {
+      --hue: 291.34;
+      --saturation: 95.9%;
+      --lightness: 61.76%;
+    }
+
+    .card:nth-child(3) {
+      --hue: 338.69;
+      --saturation: 100%;
+      --lightness: 48.04%;
+    }
+
+    .card__bullets {
+      line-height: 1.4;
+    }
+
+    .card__bullets li::before {
+      display: inline-block;
+      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='16' title='check' fill='%23dddddd'%3E%3Cpath d='M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z' /%3E%3C/svg%3E");
+      transform: translatey(0.25ch);
+      margin-right: 1ch;
+    }
+
+    .card__heading {
+      font-size: 1.05em;
+      font-weight: 600;
+    }
+
+    .card__price {
+      font-size: 1.75em;
+      font-weight: 700;
+    }
+
+    .flow > * + * {
+      margin-top: var(--flow-space, 1.25em);
+    }
+
+    .cta {
+      display: block;
+      align-self: end;
+      margin: 1em 0 0.5em 0;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      background-color: #0d0d0d;
+      padding: 0.7em;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      user-select: none;
+      opacity: var(--opacity, 0);
+      -webkit-mask: radial-gradient(
+        25rem 25rem at var(--x) var(--y),
+        #000 1%,
+        transparent 50%
+      );
+      mask: radial-gradient(
+        25rem 25rem at var(--x) var(--y),
+        #000 1%,
+        transparent 50%
+      );
+      transition: 400ms mask ease;
+      will-change: mask;
+    }
+
+    .overlay .card {
+      background-color: hsla(var(--hsl), 0.15);
+      border-color: hsla(var(--hsl), 1);
+      box-shadow: 0 0 0 1px inset hsl(var(--hsl));
+    }
+
+    .overlay .cta {
+      display: block;
+      grid-row: -1;
+      width: 100%;
+      background-color: hsl(var(--hsl));
+      box-shadow: 0 0 0 1px hsl(var(--hsl));
+    }
+
+    :not(.overlay) > .card {
+      transition: 400ms background ease;
+      will-change: background;
+    }
+
+    :not(.overlay) > .card:hover {
+      --lightness: 95%;
+      background: hsla(var(--hsl), 0.1);
+    }
+
+    .meta-link {
+      align-items: center;
+      backdrop-filter: blur(3px);
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 6px;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+      cursor: pointer;  
+      display: inline-flex;
+      gap: 5px;
+      left: 10px;
+      padding: 10px 20px;
+      position: fixed;
+      text-decoration: none;
+      transition: background-color 600ms, border-color 600ms;
+      z-index: 10000;
+    }
+
+    .meta-link:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .meta-link > i, .meta-link > span {
+      height: 20px;
+      line-height: 20px;
+    }
+
+    .meta-link > span {
+      color: black;
+      font-family: "Rubik", sans-serif;
+      transition: color 600ms;
+    }
+
+    </style>
+
+    <body>
+      <main class="main flow">
+          <h4>Pilih Metode Pembayaran</h4>
+          <div class="main__cards cards">
+            <div class="cards__inner">
+              <div class="cards__card card">
+                <h2 class="card__heading">E-Wallet</h2>
+                <p class="card__price">Rp. ......</p>
+                <ul role="list" class="card__bullets flow">
+                  <li>QRIS</li>
+                  <li>Shopee Pay</li>
+                  <li>OVO, DANA, GOPAY</li>
+                  <li>LinkAja</li>
+                </ul>
+                <a href="#basic" class="card__cta cta">Order Now</a>
+              </div>
+        
+              <div class="cards__card card">
+                <h2 class="card__heading">Virtual Account</h2>
+                <p class="card__price">Rp. ....</p>
+                <ul role="list" class="card__bullets flow">
+                  <li>BNI</li>
+                  <li>Mandiri</li>
+                  <li>BNI</li>
+                  <li>BCA</li>
+                  <li>CIMB NIAGA</li>
+                  <li>Danamon</li>
+                  <li>MayBank</li>
+                </ul>
+                <a href="#pro" class="card__cta cta">Order Now</a>
+              </div>
+        
+              <div class="cards__card card">
+                <h2 class="card__heading">Convience Store</h2>
+                <p class="card__price">Rp. ....</p>
+                <ul role="list" class="card__bullets flow">
+                  <li>Alfamart</li>
+                  <li>Indomaret</li>
+                  <li>Alfamidi</li>
+                </ul>
+                <a href="#ultimate" class="card__cta cta">Order Now</a>
+              </div>
+            </div>
+            
+            <div class="overlay cards__inner"></div>
+          </div>
+        </main>
+        <script>
+          console.clear();
+          const cardsContainer = document.querySelector(".cards");
+          const cardsContainerInner = document.querySelector(".cards__inner");
+          const cards = Array.from(document.querySelectorAll(".card"));
+          const overlay = document.querySelector(".overlay");
+
+          const applyOverlayMask = (e) => {
+          const overlayEl = e.currentTarget;
+          const x = e.pageX - cardsContainer.offsetLeft;
+          const y = e.pageY - cardsContainer.offsetTop;
+
+          overlayEl.style = `--opacity: 1; --x: ${x}px; --y:${y}px;`;
+          };
+
+          const createOverlayCta = (overlayCard, ctaEl) => {
+          const overlayCta = document.createElement("div");
+          overlayCta.classList.add("cta");
+          overlayCta.textContent = ctaEl.textContent;
+          overlayCta.setAttribute("aria-hidden", true);
+          overlayCard.append(overlayCta);
+          };
+
+          const observer = new ResizeObserver((entries) => {
+          entries.forEach((entry) => {
+            const cardIndex = cards.indexOf(entry.target);
+            let width = entry.borderBoxSize[0].inlineSize;
+            let height = entry.borderBoxSize[0].blockSize;
+
+            if (cardIndex >= 0) {
+              overlay.children[cardIndex].style.width = `${width}px`;
+              overlay.children[cardIndex].style.height = `${height}px`;
+            }
+          });
+          });
+
+          const initOverlayCard = (cardEl) => {
+          const overlayCard = document.createElement("div");
+          overlayCard.classList.add("card");
+          createOverlayCta(overlayCard, cardEl.lastElementChild);
+          overlay.append(overlayCard);
+          observer.observe(cardEl);
+          };
+
+          cards.forEach(initOverlayCard);
+          document.body.addEventListener("pointermove", applyOverlayMask);
+
+        </script>
+
+      </div>
+
+    <!-- Footer -->
+      <footer class="p-5 bg-dark text-white text-center position-relative">
+        <p class="lead">Copyright &copy; 2021 Grandviilgamingstore.com</p>
+
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+
+    </head>
+  </body>
+</html>
+
+  
